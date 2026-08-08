@@ -11,3 +11,11 @@ CREATE WAREHOUSE IF NOT EXISTS ZOMATO_WH
   AUTO_RESUME    = TRUE
   INITIALLY_SUSPENDED = TRUE;
 
+-- Database + medallion schemas.
+CREATE DATABASE IF NOT EXISTS ZOMATO;
+CREATE SCHEMA  IF NOT EXISTS ZOMATO.BRONZE;    -- Iceberg tables Spark wrote (dbt sources)
+CREATE SCHEMA  IF NOT EXISTS ZOMATO.RAW;       -- only used by the COPY fallback path
+CREATE SCHEMA  IF NOT EXISTS ZOMATO.STAGING;   -- cleaned / conformed (dbt)
+CREATE SCHEMA  IF NOT EXISTS ZOMATO.MARTS;     -- Gold, Iceberg (dbt)
+CREATE SCHEMA  IF NOT EXISTS ZOMATO.SNAPSHOTS; -- SCD2 history (dbt)
+CREATE SCHEMA  IF NOT EXISTS ZOMATO.AI;        -- LLM-enriched tables (OpenAI jobs)
