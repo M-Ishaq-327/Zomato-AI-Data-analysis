@@ -132,3 +132,33 @@ Runtime Error
 [0m11:21:48.543525 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020024E35220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020024EE1910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020024EE6250>]}
 [0m11:21:48.544271 [debug] [MainThread]: Flushing usage events
 [0m11:21:50.641832 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:55:28.313560 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A4CD6A120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A4A6E5A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A4F697C50>]}
+
+
+============================== 11:55:28.325377 | aa3fd88b-e2de-464c-acc8-0bd8acb1d5a7 ==============================
+[0m11:55:28.325377 [info ] [MainThread]: Running with dbt=1.12.0
+[0m11:55:28.326325 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\M-ISHAQ\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt test', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m11:55:28.327107 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\M-ISHAQ\Zomato-AI-Data-analysis\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m11:55:28.328652 [debug] [MainThread]: Command `dbt test` failed at 11:55:28.328278 after 0.40 seconds
+[0m11:55:28.329611 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A4F629220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A4F6D1910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A4F6D6250>]}
+[0m11:55:28.330509 [debug] [MainThread]: Flushing usage events
+[0m11:55:29.954241 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:27:25.388157 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C88906A120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8869D5A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C88B997C50>]}
+
+
+============================== 13:27:25.399890 | a3d68cdb-52b6-4f35-93c4-ab62572246cb ==============================
+[0m13:27:25.399890 [info ] [MainThread]: Running with dbt=1.12.0
+[0m13:27:25.400975 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\M-ISHAQ\\.dbt', 'invocation_command': 'dbt test', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m13:27:25.401708 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\M-ISHAQ\Zomato-AI-Data-analysis\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:27:25.403089 [debug] [MainThread]: Command `dbt test` failed at 13:27:25.402895 after 0.45 seconds
+[0m13:27:25.403610 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C88B929220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C88B9D1910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C88B9D6250>]}
+[0m13:27:25.404148 [debug] [MainThread]: Flushing usage events
+[0m13:27:27.643710 [debug] [MainThread]: An error was encountered while trying to flush usage events
